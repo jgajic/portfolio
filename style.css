@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 15%;
+  margin: 10px auto;
+  background-color: red;
+  margin-bottom: 40px;
+  height: 5px;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+/* Header */
+
+header {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h3 {
+  color: rgb(234, 204, 204);
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+header nav {
+  display: flex;
+  font-family: 'Caveat', cursive;
+}
+
+header nav a {
+  color: rgb(80, 58, 58);
+  color: rgb(214, 124, 124);
+  font-size: 1.7rem;
+  font-weight: 700;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 10px;
+}
+header nav a:hover {
+  color: yellow;
+}
+
+/* Prva sekcija */
+
+.prvaSekcija {
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.prvaSekcija div {
+  border: 2px solid red;
+  padding: 14px 100px 20px;
+  text-align: center;
+  /* background-color: white; */
+  flex: 0 0 50%;
+  /* opacity: 0.6; */
+}
+
+.prvaSekcija div h3 {
+  margin-bottom: 10px;
+}
+
+.prvaSekcija div h4 {
+  margin-bottom: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+}
+
+.prvaSekcija div p {
+  margin-bottom: 15px;
+}
+
+.prvaSekcija div a {
+  background-color: orange;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+/* Druga sekcija interests */
+
+.drugaSekcija {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 3rem;
+}
+
+.drugaSekcija h1 {
+  font-size: 50px;
+}
+
+.drugaSekcija article {
+  display: flex;
+  gap: 1rem;
+}
+
+.drugaSekcija img {
+  width: 100%;
+}
+
+.drugaSekcija article div {
+  position: relative;
+}
+
+.drugaSekcija article div .interests {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+.drugaSekcija p {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.drugaSekcija hr {
+  margin-bottom: 20px;
+}
+
+.drugaSekcija h4 {
+  margin-bottom: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.drugaSekcija img {
+  margin-bottom: 15px;
+}
+
+/* skills sekcija */
+
+.skills {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+.veliki-div {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.skills .fab {
+  font-size: 3rem;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.skills h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.skills p {
+  margin: 0 1rem;
+}
+
+/* portfolio sekcija */
+
+.portfolio {
+  text-align: center;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
+
+.portfolio div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio div img {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: orangered;
+  padding-bottom: 1rem;
+}
+
+footer h2 {
+  padding-top: 1rem;
+}
+
+footer hr {
+  background-color: black;
+}
+
+footer .fab {
+  font-size: 1.6rem;
+  color: black;
+  margin-right: 11px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 750px) {
+  .prvaSekcija {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  hr {
+    width: 45%;
+  }
+  .prvaSekcija {
+    height: 30vh;
+  }
+
+  .prvaSekcija div {
+    padding: 10px;
+  }
+  .drugaSekcija article {
+    flex-direction: column;
+  }
+  .skills p {
+    font-size: 0.7rem;
+  }
+}
