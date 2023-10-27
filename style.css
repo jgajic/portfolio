@@ -247,8 +247,9 @@ footer .fab {
 
   .prvaSekcija div {
     padding: 10px;
-    margin-left: 5px;
+    margin-left: 25px;
   }
+  
   .drugaSekcija article {
     flex-direction: column;
   }
